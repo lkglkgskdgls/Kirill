@@ -1,6 +1,33 @@
-sum_ = 0
-input_number = int(input("Ведите число: "))
-while input_number != 0:
-    sum_ += input_number
-    input_number = int(input('Ведите число: '))
-print("ответ:", sum_)
+# sum_ = 0
+# input_number = int(input("Ведите число: "))
+# while input_number != 0:
+#     sum_ += input_number
+#     input_number = int(input('Ведите число: '))
+# print("ответ:", sum_)
+
+a ={"Карандаш": {"Толщина": "5 мм", "стоимость": 150},
+    "Ручка":{"Толщина": "3 мм", "стоимость": 250},
+    "Фломастер":{"Толщина": "7 мм", "стоимость": 350},
+    }
+for value in a.keys():
+    print(value)
+
+pen={"Карандаш": {"Толщина": "5 мм", "стоимость": 150},
+    "Ручка":{"Толщина": "3 мм", "стоимость": 250},
+    "Фломастер":{"Толщина": "7 мм", "стоимость": 350},
+    }
+for value in pen.values():
+    print(value)
+
+
+pencil ={"Карандаш": {"Толщина": "5 мм", "стоимость": 150},
+    "Ручка":{"Толщина": "3 мм", "стоимость": 250},
+    "Фломастер":{"Толщина": "7 мм", "стоимость": 350},
+    }
+for value in pencil.items():
+    print(value)
+
+for i in range(0,15):
+    for j in range (0, 16):
+        print(j, end=" ")
+    print(i)
